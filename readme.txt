@@ -1,4 +1,4 @@
---Readme document for *Yiming Ning*, *YOUR_EMAIL@uci.edu*--
+--Readme document for *Yiming Ning*, *yimingn3@uci.edu*--
 
 A reminder on academic integrity, as described in the syllabus.
 
@@ -10,45 +10,57 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/10
-- */1 Readme
-- */2 Basic HTML content
-- */1 Basic CSS styling
-- */1 Advanced feature
-- */2 Responsive layout
-- */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+10/10
+- 1/1 Readme
+- 2/2 Basic HTML content
+- 1/1 Basic CSS styling
+- 1/1 Advanced feature
+- 2/2 Responsive layout
+- 1/1 Passes validation checks
+- 2/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-
-
+- Multi-page site with navigation (Home, Projects, Contact)
+- Home page includes: short bio/introduction, profile image, skills list, and relevant coursework list
+- Projects page includes: two project entries (CS178, CS184) with descriptions and GitHub links
+- Contact page includes: simple contact form (name/email/message) with proper labels
+- Footer on each page with name + email
 
 (b) CSS features
-
-
+- Consistent layout across all pages using a shared stylesheet (styles.css)
+- Typography using Google Font (Inter) with cross-platform fallbacks
+- Styled navigation with active state
+- “Card” styling on Projects page (two-column grid on desktop, single column on small screens)
+- Styled “pill” list for skills
+- Light gradient background and bordered panels for readability
+- Form styling (inputs, textarea, button)
 
 (c) Advanced features
-
-
-
+- Accessibility skip link (“Skip to main content”)
+- Responsive layout using media queries:
+  - Header stacks on small screens
+  - Hero section becomes vertical on small screens
+  - Project cards change from 2 columns to 1 column on small screens
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
-
-
+- AChecker reported 0 Known Problems and 0 Likely Problems for my pages.
+- There were Potential Problems reported. I reviewed them manually:
+  - Some potential issues require human judgment (e.g., whether text alternatives or headings are appropriate). My pages use semantic headings (h1/h2), a skip link, and labeled form controls.
+  - External links (GitHub/LinkedIn) open in a new tab; I kept rel="noreferrer" for security. This does not prevent access to the destination and is common practice.
 
 4. How long, in hours, did it take you to complete this assignment?
-
-
+  6 HOURS
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
-
-
+- W3C HTML Validator (used to validate each page)
+- W3C CSS Validator (used to validate styles.css)
+- AChecker (WCAG 2.0 AA) accessibility checker
+- Google Fonts (Inter)
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
-
+None.
 
 7. Is there anything special we need to know in order to run your code?
-
+No. Open index.html in a browser. No build tools or packages are required.
