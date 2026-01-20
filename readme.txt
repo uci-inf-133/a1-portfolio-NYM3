@@ -43,6 +43,7 @@ Talking to classmates about class material, assignment requirements, etc. is a g
   - Header stacks on small screens
   - Hero section becomes vertical on small screens
   - Project cards change from 2 columns to 1 column on small screens
+-Tested responsiveness using Chrome DevTools device emulation (iPhone/iPad sizes); navigation and layout work correctly
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
 - AChecker reported 0 Known Problems and 0 Likely Problems for my pages.
