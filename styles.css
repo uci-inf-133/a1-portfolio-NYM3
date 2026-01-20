@@ -4,7 +4,11 @@
   --text: #111827;
   --muted: #4b5563;
   --accent: #2563eb;
-  --border: rgba(17, 24, 39, 0.12);
+  --border: rgba(17, 24, 39, 0.50);
+}
+
+main {
+  flex: 1;
 }
 
 * { box-sizing: border-box; }
@@ -15,6 +19,10 @@ body {
   line-height: 1.6;
   background: linear-gradient(180deg, #f6f7fb 0%, #eef2ff 100%);
   color: var(--text);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a { color: var(--accent); }
@@ -103,11 +111,45 @@ h2 { margin-top: 24px; }
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .pill-list li {
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.04);
-  padding: 6px 10px;
+  background: rgba(37, 99, 235, 0.06); /* very light accent tint */
+  padding: 6px 12px;
   border-radius: 999px;
+  color: var(--text);
+  font-size: 0.95rem;
+  cursor: default;
+  box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .note {
@@ -127,6 +169,32 @@ h2 { margin-top: 24px; }
   display: flex;
   justify-content: space-between;
   gap: 16px;
+}
+
+input, textarea, button {
+  font: inherit;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 520px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+}
+
+form.note {
+  max-width: 560px;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(37, 99, 235, 0.10);
+  color: var(--text);
 }
 
 /* Responsive */
